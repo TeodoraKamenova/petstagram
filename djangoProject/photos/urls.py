@@ -2,9 +2,9 @@ from django.urls import path, include
 from djangoProject.photos.views import create_photo, details_photo, edit_photo
 
 urlpatterns = (
-    path("create/", create_photo, name='create_photo'),
+    path("create/", create_photo, name='create photo'),
     path("<int:pk>/", include([
-        path("", details_photo, name='details_photo'),
-        path("edit/", edit_photo, name='edit_photo'),
+        path("", details_photo, name='details photo'),
+        path("edit/", edit_photo, name='edit photo'),
     ]))
     )
